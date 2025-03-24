@@ -9,9 +9,13 @@ public class RnaTranscriptionTest {
         assertEquals("C", RnaTranscription.transcribeDnaToRna("G"));
     }
     @Test
-public void testTranscribeDnaToRnaCytosine() {
-    // Este test verifica que C se transcriba a G
+        public void testTranscribeDnaToRnaCytosine() {    
     assertEquals("G", RnaTranscription.transcribeDnaToRna("C"));
-}
+    }
+    @Test
+    public void testTranscribeDnaToRnaThymine() {   
+    assertEquals("A", RnaTranscription.transcribeDnaToRna("T"));
+    }
+
 
 }
