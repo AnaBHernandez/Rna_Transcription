@@ -1,4 +1,4 @@
-package dev.anabelen.rna_transcripcion;
+package dev.anabelen.Rna_Transcription;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
