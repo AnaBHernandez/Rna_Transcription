@@ -2,12 +2,16 @@ package dev.anabelen.Rna_Transcription;
 
 public class RnaTranscription {
     public static String transcribeDnaToRna(String dna) {
-        switch (dna) {
-            case "G": return "C";
-            case "C": return "G";
-            case "T": return "A";
-            case "A": return "U";
-            default: return "";
+        StringBuilder rna = new StringBuilder();
+        for (char nucleotide : dna.toCharArray()) {
+            switch (nucleotide) {
+                case 'G': rna.append("C"); break;
+                case 'C': rna.append("G"); break;
+                case 'T': rna.append("A"); break;
+                case 'A': rna.append("U"); break;
+                default: throw new IllegalArgumentException("Nucleótido no válido: " + nucleotide);
+            }
         }
+        return rna.toString();
     }
 }
