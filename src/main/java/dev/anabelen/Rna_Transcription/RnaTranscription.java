@@ -5,6 +5,7 @@ public class RnaTranscription {
         switch (dna) {
             case "G": return "C";
             case "C": return "G";
+            case "T": return "A";
             default: return "";
         }
     }
