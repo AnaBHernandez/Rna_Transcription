@@ -20,4 +20,8 @@ public class RnaTranscriptionTest {
     public void testTranscribeDnaToRnaAdenine() {
     assertEquals("U", RnaTranscription.transcribeDnaToRna("A"));
     }
+    @Test
+    public void testTranscribeDnaToRnaSequence() {    
+    assertEquals("CGAU", RnaTranscription.transcribeDnaToRna("GCTA"));
+    }
 }
