@@ -16,6 +16,8 @@ public class RnaTranscriptionTest {
     public void testTranscribeDnaToRnaThymine() {   
     assertEquals("A", RnaTranscription.transcribeDnaToRna("T"));
     }
-
-
+    @Test
+    public void testTranscribeDnaToRnaAdenine() {
+    assertEquals("U", RnaTranscription.transcribeDnaToRna("A"));
+    }
 }
