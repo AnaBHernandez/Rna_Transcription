@@ -2,9 +2,10 @@ package dev.anabelen.Rna_Transcription;
 
 public class RnaTranscription {
     public static String transcribeDnaToRna(String dna) {
-        if ("G".equals(dna)) {
-            return "C";
+        switch (dna) {
+            case "G": return "C";
+            case "C": return "G";
+            default: return "";
         }
-        return "";
     }
 }
